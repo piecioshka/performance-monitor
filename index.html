@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>PerfoJS</title>
+    <link rel="stylesheet" href="styles/vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="styles/perfo.css">
+    <script data-main="scripts/main.js" src="scripts/vendor/require/require.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="col-lg-6">
+            <h1 class="page-header">PerfoJS
+                <small>Test performance your JavaScript code!</small>
+            </h1>
+            <form role="form" action="#" class=" well well-sm">
+                <div class="form-group">
+                    <label for="code">Put your code</label>
+                    <textarea id="code" class="form-control" rows="10"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input id="submit" type="submit" class="btn btn-block btn-primary" value="Make some noise!"/>
+                    <img id="loader" class="hide center-block" src="images/loader.gif" alt="waiting..." />
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+</html>
