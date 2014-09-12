@@ -1,20 +1,18 @@
 <h1 class="page-header">Results</h1>
 
-<div class="well well-sm">
+<div class="container-fluid">
     <table class="table table-striped table-hover table-condensed">
         <thead class="text-primary">
             <tr>
                 <th width="76">#</th>
-                <th class="text-center">Mean</th>
-                <th class="text-center">Global</th>
+                <th>Time [ms]</th>
             </tr>
         </thead>
         <tbody>
             {{#results}}
             <tr>
-                <td>{{id}}</td>
-                <td class="text-center">{{mean}} ms</td>
-                <td class="text-center">{{global}} ms</td>
+                <td class="">{{id}}</td>
+                <td>{{time}} ms</td>
             </tr>
             {{/results}}
         </tbody>
