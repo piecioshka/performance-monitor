@@ -1,3 +1,5 @@
+/*global performance */
+
 define([
     'text!template/results.html',
     'mustache'
@@ -81,9 +83,9 @@ define([
                 times.forEach(function () {
                     var start, end;
 
-                    start = Date.now();
+                    start = performance.now();
                     eval(code);
-                    end = Date.now();
+                    end = performance.now();
 
                     timeList.push({
                         start: start,
@@ -102,7 +104,7 @@ define([
                 time = endTime - startTime;
 
                 return {
-                    time: time
+                    time: time.toFixed(3)
                 };
             },
 

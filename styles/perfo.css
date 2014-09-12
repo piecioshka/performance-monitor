@@ -6,3 +6,9 @@
     padding: 7px 0;
     display: block;
 }
+
+#results:empty {
+    height: 472px;
+    background: url('../images/fake.png') no-repeat 0 0;
+    opacity: 0.2;
+}
