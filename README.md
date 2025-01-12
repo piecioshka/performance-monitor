@@ -8,4 +8,4 @@ If you are power user of <http://jsperf.com/> that version is smaller and quicke
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2014-2020
+[The MIT License](https://piecioshka.mit-license.org) @ 2014
